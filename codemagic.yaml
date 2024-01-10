@@ -10,10 +10,15 @@ workflows:
       - name: Build apk with flutter
         script: |
           flutter build apk
+    artifacts:
+      - build/**/outputs/**/*.apk
+      - build/**/outputs/**/mapping.txt
+      - flutter_drive.log
     publishing:
       email:
         recipients:
           - mohamad.samer.abdulaziz@gmail.com
         notify:
           success: true
-          failure: false
+          failure: true
+
