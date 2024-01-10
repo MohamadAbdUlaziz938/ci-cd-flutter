@@ -2,8 +2,7 @@ workflows:
   dev-android:
     name: Dev android
     environment:
-      flutter:
-        version: stable 3.10.6
+      flutter: stable
     scripts:
       - name: Get Flutter packages
         script: |
