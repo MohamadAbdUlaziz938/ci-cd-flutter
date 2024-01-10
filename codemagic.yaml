@@ -1,6 +1,6 @@
 workflows:
-  android-workflow:
-    name: android
+  dev-android:
+    name: Dev android
     publishing:
       email:
         recipients:
