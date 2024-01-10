@@ -1,6 +1,9 @@
 workflows:
   dev-android:
     name: Dev android
+    environment:
+      flutter:
+        version: stable 3.10.6
     publishing:
       email:
         recipients:
