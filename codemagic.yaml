@@ -1,0 +1,10 @@
+workflows:
+  android-workflow:
+    name: android
+    publishing:
+      email:
+        recipients:
+          - mohamad.samer.abdulaziz@gmail.com
+        notify:
+          success: true
+          failure: false
