@@ -14,6 +14,9 @@ workflows:
       - build/**/outputs/**/*.apk
       - build/**/outputs/**/mapping.txt
       - flutter_drive.log
+    triggering:
+      events:
+        - pull_request
     publishing:
       email:
         recipients:
