@@ -12,6 +12,11 @@ workflows:
           flutter build apk --split-per-abi --obfuscate --split-debug-info=debug\
     artifacts:
       - build/**/outputs/**/*.apk
+      - build/**/outputs/**/mapping.txt
+      - flutter_drive.log
+    triggering:
+      events:
+        - pull_request
     publishing:
       email:
         recipients:
