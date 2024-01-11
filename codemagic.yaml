@@ -9,7 +9,7 @@ workflows:
           flutter packages pub get
       - name: Build apk with flutter
         script: |
-          flutter build apk --split-per-abi --obfuscate
+          flutter build apk --split-per-abi --obfuscate --split-debug-info=debug\
     artifacts:
       - build/**/outputs/**/*.apk
       - build/**/outputs/**/mapping.txt
