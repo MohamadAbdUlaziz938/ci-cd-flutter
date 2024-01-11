@@ -16,9 +16,9 @@ workflows:
       - flutter_drive.log
     triggering:
       events:
-        - pull_request
+        - push
       branch_patterns:
-        - pattern: '*'
+        - pattern: 'master'
           include: true
           source: true
       cancel_previous_builds: true
