@@ -4,6 +4,9 @@ workflows:
     environment:
       flutter: stable
     scripts:
+      - name: Generate secret keys file
+        script: |
+            echo $secret_keys | base64 --decode > ./secret-keys.yaml
       - name: Get Flutter packages
         script: |
           flutter packages pub get
