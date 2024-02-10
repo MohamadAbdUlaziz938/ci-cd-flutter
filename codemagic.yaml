@@ -3,6 +3,8 @@ workflows:
     name: Dev Android
     environment:
       flutter: stable
+      groups:
+        - dev
     scripts:
       - name: Generate secret keys file
         script: |
