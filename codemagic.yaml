@@ -1,6 +1,6 @@
 workflows:
   dev-android:
-    name: Dev android
+    name: Dev Android
     environment:
       flutter: stable
       groups:
