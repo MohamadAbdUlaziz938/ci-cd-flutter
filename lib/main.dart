@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(map.toString()),
-                  SizedBox(height: 12,),
+                  const SizedBox(height: 12,),
                   const Text(
                     'You have pushed the button this many times:',
                   ),

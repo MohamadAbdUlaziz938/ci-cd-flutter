@@ -3,6 +3,8 @@ workflows:
     name: Dev android
     environment:
       flutter: stable
+      groups:
+        - dev
     scripts:
       - name: Get Flutter packages
         script: |
