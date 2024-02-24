@@ -8,7 +8,10 @@ workflows:
     scripts:
       - name: Generate secret keys file
         script: |
-            echo $secret_keys | base64 --decode > ./secret-keys.yaml
+          echo $secret_keys | base64 --decode > ./secret-keys.yaml
+      - name: Generate dart generator
+        script: |
+          bash dart_generator.bash
       - name: Get Flutter packages
         script: |
           flutter packages pub get
