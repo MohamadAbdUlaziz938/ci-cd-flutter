@@ -31,6 +31,7 @@ workflows:
       email:
         recipients:
           - mohamad.samer.abdulaziz@gmail.com
+          - amoood8880@gmail.com
         notify:
           success: true
           failure: true
